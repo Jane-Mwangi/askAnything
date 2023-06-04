@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'dart:math';
 void main() {
   return runApp(
     MaterialApp(
@@ -9,18 +9,45 @@ void main() {
           title: Text('Ask Me Anything'),
           backgroundColor: Colors.cyan,
         ),
-       body:AskMeAnythingPage(), 
+       body: AskMeAnythingPage(),
       ),
     ),
   );
 }
 
-class AskMeAnythingPage extends StatelessWidget {
+// class AskMeAnythingPage extends StatelessWidget {
+//   const AskMeAnythingPage({Key? key}) : super(key: key);
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return Center(
+//       child: TextButton(
+//         onPressed: (){
+//
+//         }, child: Image.asset('images/ball1.png'),
+//       ),
+//     );
+//   }
+// }
+
+class AskMeAnythingPage extends StatefulWidget {
   const AskMeAnythingPage({Key? key}) : super(key: key);
 
   @override
+  State<AskMeAnythingPage> createState() => _AskMeAnythingPageState();
+}
+
+class _AskMeAnythingPageState extends State<AskMeAnythingPage> {
+  @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Center(
+      child: TextButton(
+        onPressed: (){
+
+        }, child: Image.asset('images/ball1.png'),
+      ),
+    );
   }
 }
+
 
